@@ -1,13 +1,11 @@
 # cpp deom
 
 
-安装 vcpkg
+## 安装 vcpkg
 ```bash
 git clone https://github.com/microsoft/vcpkg
 ./vcpkg/bootstrap-vcpkg.sh
 ```
-
-
 
 ### 安装 Linux Developer Tools
 
@@ -60,7 +58,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 $ brew install gcc
 ```
 
-此时，您就可以使用 bootstrap.sh 编译vcpkg了。 请参阅 [快速开始](https://blog.csdn.net/sexyluna/article/details/115280121#快速开始-unix)
+此时，您就可以使用 bootstrap.sh 编译vcpkg了。
 
 ### 在 CMake 中使用 vcpkg
 
@@ -86,7 +84,7 @@ $ brew install gcc
 [vcpkg root]/scripts/buildsystems/vcpkg.cmake
 ```
 
-#### [CLion](https://so.csdn.net/so/search?q=CLion&spm=1001.2101.3001.7020) 中使用 vcpkg
+#### CLion 中使用 vcpkg
 
 打开 Toolchains 设置
 (File > Settings on Windows and Linux, CLion > Preferences on macOS)，
@@ -112,7 +110,7 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/
 
 使用此种方式可无需设置 `CMAKE_TOOLCHAIN_FILE` 即可使用vcpkg，且更容易完成配置工作。
 
-## Tab补全/[自动补全](https://so.csdn.net/so/search?q=自动补全&spm=1001.2101.3001.7020)
+## Tab补全/自动补全
 
 `vcpkg` 支持命令，包名称，以及 Powershell 和 Bash 中的选项。
 若您需要在指定的 shell 中启用Tab补全功能，请依据您使用的shell运行：
